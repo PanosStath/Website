@@ -9,51 +9,143 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #172450;
             color: #333;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f8f8f8;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         h1, h2, h3 {
-            color: #007bff;
+            color: #0c1f33;
         }
         .section {
             margin-bottom: 30px;
         }
-        .section h2 {
+        .section h2, .section h3{
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
         }
-        .project {
+        .projects {
             margin-bottom: 20px;
         }
-        .project h3 {
+        .projects h3 {
             margin-bottom: 10px;
         }
         .skills {
-            margin-top: 20px;
+            margin-bottom: 10px;
         }
-        .skills ul {
+        .skills h3 {
+            margin-bottom: 10px;
+        }
+        .skills ul, .projects ul {
             list-style-type: none;
             padding-left: 0;
+        }
+        .image-section img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        }
+        .mail-address{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #095bb9;
+            text-decoration: underline;
+        }
+        .linkedin{
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            font-size: 16px;
+            color: #095bb9;
+            text-decoration: underline;
+        }
+        .github{
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            font-size: 16px;
+            color: #095bb9;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Panagiotis Stathopoulos</h1>
-        <div class="section">
+        <div class="mail-address">
+            <a href="mailto:panosstathopoulos07@gmail.com">panosstathopoulos07@gmail.com</a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/panagiotis--stathopoulos/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="github"> 
+        <a href="https://github.com/PanosStath" target="_blank">GitHub</a>
+        </div>
+            <div class="image-section">
+                <img src="profile.jpg" alt="profile" width="200" height="200" >
+            </div>
+            <div class="section">
             <h2>About Me</h2>
             <p>Hello! I'm Panagiotis Stathopoulos, a passionate Computer Engineer and Informatics student at the University of Patras. Beyond my academic pursuits, I'm someone who thrives on challenges and loves diving deep into the world of Network Engineering and Cybersecurity.</p>
-            <p>When I'm not buried in code or debugging network configurations, you can find me exploring the latest advancements in technology, honing my skills in computer networking, or tinkering with hardware to understand how things work under the hood.</p>
+            <p>When I'm not engaged in coding or fine-tuning network configurations, you can find me exploring the latest advancements in technology, honing my skills in computer networking, or tinkering with hardware to better understand how things work under the hood.</p>
             <p>I believe in the power of continuous learning and enjoy pushing the boundaries of what's possible in the ever-evolving landscape of technology. Whether it's designing secure network infrastructures or delving into the intricacies of data structures, I'm always eager to expand my knowledge and skills.</p>
-            <p>Feel free to explore my projects and skills below, and don't hesitate to reach out if you'd like to connect or collaborate!</p>
+            <p>Feel free to explore my projects <a href="projects.html">here</a>, and don't hesitate to reach out if you'd like to connect or collaborate!</p>
+            </div>
+            <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>University of Patras - Computer Networks (2022)</li>
+                <li>University of Patras - Modern Network Security Applications (2023-2024)</li>
+                <li>Multi-Dimensional Data Structures (Group Project) (2023-2024)</li>
+                <li>E-Shop (Group Project) (2023)</li>
+                <li>Travel Agency Management System (Group Project) (2022-2023)</li>
+            </ul>
+            </div>
+            <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Computer Networking</li>
+                <li>Network Security</li>
+                <li>Operating Systems (Windows, Linux)</li>
+                <li>Local Area Network (LAN)</li>
+                <li>Computer Hardware</li>
+                <li>Computer Security</li>
+                <li>Firewall Configuration (iptables)</li>
+                <li>Remote Access Security (fail2ban)</li>
+                <li>Denial of Service (DoS) Attack Detection and Mitigation</li>
+                <li>File Encryption/Decryption</li>
+                <li>DNS Attacks Simulation</li>
+                <li>Web Application Security</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Data Structures Implementation and Analysis</li>
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Virtual Machines</li>
+                <li>Troubleshooting</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+            <div class="section">
+            <h2>If you want to know more about me</h2>
+            <p>Some of my favorite hobbies and activities include: </p>
+            <ul>
+            <li>Sports (mainly basketball and sometimes football but always interested in trying out new sports, also recently participated in my first 5km run)</li>
+            <li>Traveling</li>
+            <li>Hiking</li>
+            <li>Video Games/Retro Consoles</li>
+            <li>Tech</li>
+            </ul>
         </div>
     </div>
 </body>

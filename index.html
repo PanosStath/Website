@@ -6,8 +6,14 @@
         history.replaceState({}, '', location.pathname.replace('.html', ''));
         }
     </script>
+    <script>
+        if (window.location.protocol !== "https:") {
+            window.location.href = "https://" + window.location.host + window.location.pathname;
+        }
+        </script>        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; X-Content-Type-Options: nosniff; X-Frame-Options: DENY; X-XSS-Protection: 1; mode=block;">    
     <title>My Portofolio</title>
     <style>
         body {
